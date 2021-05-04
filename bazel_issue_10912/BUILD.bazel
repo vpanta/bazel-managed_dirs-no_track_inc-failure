@@ -1,0 +1,9 @@
+# Add rules here to build your software
+# See https://docs.bazel.build/versions/master/build-ref.html#BUILD_files
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+  name = "tsconfig",
+  deps = ["@npm//lodash-es"],
+)
+
